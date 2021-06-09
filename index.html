@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet</title>
+</head>
+<body>
+    <!-- ETIQUITAS NO DEFINIDAS -->
+    <firulais>
+        <div></div>
+    </firulais>
+
+    <!-- ELEMENTOS HIJOS > -->
+    <div>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
+
+    <!-- ELEMENTOS HERMANOS + -->
+    <div></div>
+    <p></p>
+    <blockquote></blockquote>
+
+    <!-- ELEMENTOS ESCALADOS ^ -->
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+    </div>
+
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+        <blockquote></blockquote>
+    </div>
+
+    <div></div>
+    <div>
+        <p><span></span><em></em></p>
+    </div>
+    <blockquote></blockquote>
+
+    <!-- MULTIPLICACIÓN DE ELEMENTOS * -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- AGRUPACIÓN DE ELEMENTOS () -->
+    <div>
+        <header>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </header>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+
+    <!-- AGRUPACIÓN DENTRO DE AGRUPACIÓN (x(y)) -->
+    <div>
+        <dl>
+            <dt></dt>
+            <dd></dd>
+            <dt></dt>
+            <dd></dd>
+            <dt></dt>
+            <dd></dd>
+        </dl>
+    </div>
+    <footer>
+        <p></p>
+    </footer>
+
+    <!-- ID # Y CLASES . -->
+    <div id="header"></div>
+    <div class="page"></div>
+    <div id="footer" class="class1 class2 class3"></div>
+    
+    <!-- ATRIBUTOS PERSONALIZADOS [] -->
+    <td title="Hello world!" colspan="3"></td>
+
+    <!-- NUMERACIÓN DE ELEMENTOS $ -->
+    <ul>
+        <li class="item1"></li>
+        <li class="item2"></li>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+    </ul>
+
+    <ul>
+        <li class="item item1"></li>
+        <li class="item item2"></li>
+        <li class="item item3"></li>
+        <li class="item item4"></li>
+        <li class="item item5"></li>
+    </ul>
+    
+    <!-- CAMBIO DE NUMERACIÓN Y DIRECCIÓN @ -->
+
+    <ul>
+        <li class="item5"></li>
+        <li class="item4"></li>
+        <li class="item3"></li>
+        <li class="item2"></li>
+        <li class="item1"></li>
+    </ul>
+
+    <ul>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+        <li class="item6"></li>
+        <li class="item7"></li>
+    </ul>
+
+    <ul>
+        <li class="item7"></li>
+        <li class="item6"></li>
+        <li class="item5"></li>
+        <li class="item4"></li>
+        <li class="item3"></li>
+    </ul>
+
+    <!-- TEXTO DENTRO DEL ELEMENTO {} -->
+    <a href="">Click me</a>
+
+    <a href="">
+        click
+    </a>
+    <b>
+        here
+    </b>
+    
+    <a href="">
+        click<b>here</b>
+    </a>
+
+    <p>click <a href="">here</a> to continue</p>
+
+    <!-- **NO** ESPACIOS ENTRE OPERADORES -->
+    (header > ul.nav > li*5 ) + <footer></footer>
+
+    <!-- ESTRUCTURA GENERADA CON EMMET -->
+    header+(nav>div.nav-item.nav-item$*5)+(section>article.text$*3>h1{Titulo}+p>lorem)+footer
+
+    <header></header>
+    <nav>
+        <div class="nav-item nav-item1"></div>
+        <div class="nav-item nav-item2"></div>
+        <div class="nav-item nav-item3"></div>
+        <div class="nav-item nav-item4"></div>
+        <div class="nav-item nav-item5"></div>
+    </nav>
+    <section>
+        <article class="text1">
+            <h1>Titulo</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus repudiandae dolor eligendi totam dignissimos cupiditate nobis quisquam esse nam ratione aspernatur, aperiam nihil quam tempore numquam quas. Eligendi, vitae ratione.</p>
+        </article>
+        <article class="text2">
+            <h1>Titulo</h1>
+            <p>Exercitationem iusto, error laudantium itaque, aut enim sequi sapiente quasi possimus eius architecto! Soluta quam rem eum hic placeat quaerat deleniti fugit dolorum nostrum consequuntur, eaque fugiat dolor repellat quas!</p>
+        </article>
+        <article class="text3">
+            <h1>Titulo</h1>
+            <p>Animi eum dicta tempore quam a fugiat rem assumenda quas. Harum deserunt molestiae iusto neque nulla consequuntur quis impedit dignissimos laboriosam odit, at blanditiis vero autem quasi provident ducimus hic.</p>
+        </article>
+    </section>
+    <footer></footer>
+
+</body>
+</html>
